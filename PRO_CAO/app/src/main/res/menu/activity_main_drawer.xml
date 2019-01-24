@@ -20,6 +20,10 @@
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_menu_manage"
             android:title="Профиль" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Домашняя" />
     </group>
 
 
