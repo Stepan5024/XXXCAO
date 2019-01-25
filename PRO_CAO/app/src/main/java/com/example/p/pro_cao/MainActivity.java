@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        Fragment fragment = null;
+        fragment = new Home();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+
+
     }
 
     @Override
@@ -70,8 +76,8 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         Fragment fragment = null;
-        int id = item.getItemId();
 
+        int id = item.getItemId();
         if (id == R.id.nav_map) {
             Intent intent = new Intent(MainActivity.this, Map.class);
             startActivity(intent);
@@ -86,8 +92,10 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, LoginActivity.class);
             startActivity(intent);
             finish();*/
+        } else if (id == R.id.nav_home) {
+            fragment = new Home();
         }
-        if (fragment != null) {
+            if (fragment != null) {
 
             FragmentManager fragmentManager = getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
