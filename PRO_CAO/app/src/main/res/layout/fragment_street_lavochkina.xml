@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                app:srcCompat="@drawable/narodnu" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView16"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:text="Улица Лавочкина"
+                android:textAlignment="center"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cd1"
+                android:layout_marginTop="20dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:text="На карте" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:text="район Ховрино, улица Лавочкина" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_white"
+                android:layout_below="@+id/textView9"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:text="назад" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_margin="7dp"
+                android:id="@+id/cd1"
+                android:elevation="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Происхождение названия
+Названа в честь советского авиаконструктора С. А. Лавочкина в 1965 г. В 1939—1940 годах под руководством В. П. Горбунова в ОКБ-301 (город Химки Московской области) был одним из инициаторов и участников создания советского современного самолёта-истребителя ЛаГГ-3 из дельта-древесины. Позже стал главным конструктором по самолётостроению. Ряд последующих моделей этого самолёта — Ла-5, Ла-7 и различные их модификации, созданные уже в ОКБ-21 под руководством Лавочкина в городе Горьком (назначен начальником ОКБ 23 ноября 1940 года), обнаружили высокие боевые качества и сыграли важную роль в ходе Великой Отечественной войны. Умер 	9 июня 1960 (59 лет).  Улица Лавочкина состоит из двух отрезков, не составляющих единую трассу и сильно различающихся по обустройству. Начальный отрезок, между Кронштадтским бульваром и Флотской улицей, узкий и напоминает скорее внутридворовый проезд между жилым кварталом и технической зоной, делая при этом несколько поворотов, в том числе и при выходе на Флотскую улицу. Второй участок, от улицы Флотской до Петрозаводской — вполне современная трасса, расширенная в 2000-х годах до двух полос в каждую сторону как часть дублера Ленинградского шоссе. За Петрозаводской улицей переходит в улицу Дыбенко. На этой части улицы расположены дворец спорта «Динамо», хлебозавод и другие предприятия и общественные объекты.
+" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

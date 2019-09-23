@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_shape_1"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/sc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:autoSizeTextType="uniform"
+                android:text="Маршрут Всей семьей"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:autoSizeTextType="uniform"
+                android:text="Метро Ховрино"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/textVie4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relat"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:autoSizeTextType="uniform"
+                android:text="Кликните чтобы открыть карту"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cd1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                android:layout_below="@id/textView3"
+                app:cardCornerRadius="32dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="end">
+
+                    <com.example.p.pro_cao.RoundedCornerImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/xovrino"
+                        android:scaleType="fitXY" />
+
+                    <TextView
+                        android:id="@+id/mainText12"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:layout_alignParentBottom="true"
+                        android:paddingTop="10dp"
+                        android:text="Метро Ховрино"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="26sp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/relat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/card1"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:id="@+id/button_return"
+                    style="@style/button_mono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Назад" />
+
+                <Button
+                    android:id="@+id/button"
+                    style="@style/button_mono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Дальше" />
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cd1"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp">
+
+                <ScrollView
+                    android:id="@+id/sc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView15">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:text="История района.
+Ховрино была одной из крупнейших сортировочных станций в России.
+Начало станции было положено в 1870 году. Дачная жизнь была поставлена в районе села Ховрино на солидную основу, когда здесь приобрел усадьбу крупный промышленник Е. В. Молчанов. При его содействии и на его деньги была открыта железнодорожная платформа Ховрино. Локомотивное депо Ховрино закрыто в 2016—2017 годах, в ноябре 2017 идёт его снос. С 1972 по 1997 год на постаменте стоял Тепловоз Щэл1, в настоящее время передан в железнодорожный музей в Санкт-Петербурге. С 2000 по 2012 годы у локомотивного депо стоял электровоз-памятник ВЛ23-456. Имелся музей истории депо Ховрино.
+"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </ScrollView>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                app:srcCompat="@drawable/festivalnaya" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView16"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:text="Фестивальная улица"
+                android:textAlignment="center"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cd1"
+                android:layout_marginTop="20dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:text="На карте" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_white"
+                android:layout_below="@+id/textView9"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:text="назад" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_margin="7dp"
+                android:id="@+id/cd1"
+                android:elevation="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Фестива́льная у́лица — улица в Северном административном округе города Москвы на территории районов Головинский, Ховрино и Левобережный.
+Название дано улице в 1964 году в память о VI Всемирном фестивале молодежи и студентов.
+
+Частично проходит вдоль Парка Дружбы, заложенного во время этого фестиваля. Улица начинается от Ленинградского шоссе (между Парком Дружбы и домом № 92). Общее направление — с юго-запада на северо-восток. На путепроводе через Октябрьскую железную дорогу переходит в Талдомскую улицу. Нумерация домов ведётся от Ленинградского шоссе.
+" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

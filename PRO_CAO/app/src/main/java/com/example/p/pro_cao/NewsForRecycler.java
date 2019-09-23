@@ -8,7 +8,7 @@ public class NewsForRecycler {
     private int image;
     public FragmentActivity activity;
 
-    public NewsForRecycler(String news, int image,FragmentActivity activity){
+    public NewsForRecycler(String news, int image, FragmentActivity activity){
 
         this.news=news;
         this.image = image;

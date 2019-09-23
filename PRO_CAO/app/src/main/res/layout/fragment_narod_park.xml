@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                app:srcCompat="@drawable/narodpark" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView16"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:text="Народный парк Ховрино"
+                android:textAlignment="center"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cd1"
+                android:layout_marginTop="20dp"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:text="На карте" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView8"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:text="район Ховрино, улица Фестивальная, д. 8" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/button_white"
+                android:layout_below="@+id/textView9"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:text="назад" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_margin="7dp"
+                android:id="@+id/cd1"
+                android:elevation="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="19 августа в Ховрино прошла торжественная церемония открытия первого народного парка, который находится у здания 8 строение 5 на улице Фестивальная. Всего за два месяца на месте бывшего сквера возвели народный парк. Были проведены масштабные работы по благоустройству. Построили одну спортплощадку и три детские с противоударным резиновым покрытием, у которых есть большие и малые архитектурные формы, насадили цветники, выложили плиткой полутора тысяч метров дорожек и почти полностью отремонтировали газон.
+" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

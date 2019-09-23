@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_shape_2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sc2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:autoSizeTextType="uniform"
+                android:text="Маршрут Всей семьей"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:autoSizeTextType="uniform"
+                android:text="Конно-спортивная база ЦСКА"
+                android:textAlignment="center"
+                android:textColor="#FFF"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/textVie4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/button"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:autoSizeTextType="uniform"
+                android:text="Кликните чтобы открыть карту"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="italic" />
+
+            <com.example.p.pro_cao.RoundedCornerImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_below="@+id/textView3"
+                android:layout_margin="10dp"
+                android:background="@drawable/cska"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/button"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card1"
+                android:layout_centerHorizontal="true"
+                android:text="Дальше" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView15"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="20dp">
+
+                <ScrollView
+                    android:id="@+id/sc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView15">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:text="Строительство конноспортивного комплекса Центрального спортивного клуба Армии, расположенного достаточно недалеко от центра города, началось в 1976 году в период подготовки Москвы к XXII Олимпийским играм. Официальное открытие комплекса состоялось в 1980 году незадолго до старта Олимпиады. Здесь же проводились тренировки спортсменов к олимпийским соревнованиям по конному спорту и современному пятиборью. Территория конноспортивной базы ЦСКА составляет около 5,5 гектара с различными современными спортивными сооружениями: закрытым конным манежем для проведения соревнований по конкуру и выездке, открытым разминочным полем и открытым поле для выездки, зимними конюшнями с денниками, ветеринарным лазаретом, стрелковым тиром, спортивными залами для занятий бадминтоном, тхэквондо и фехтованием.
+
+В настоящее время на КСБ ЦСКА тренируется спортивная команда Клуба по современному пятиборью и конному спорту, занимаются учащиеся СДЮШОР ЦСКА по конному спорту и современному пятиборью, тхэквондо, бадминтону. Регулярно проводятся соревнования по конкуру и выездке, крупные международные соревнования по современному пятиборью, различные зрелищные конноспортивные мероприятия.
+
+
+"                            android:textAlignment="center"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </ScrollView>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

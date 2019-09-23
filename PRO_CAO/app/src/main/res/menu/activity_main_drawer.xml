@@ -4,26 +4,27 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_map"
-            android:icon="@drawable/ic_map_24dp"
-            android:title="Карта" />
-        <item
-            android:id="@+id/nav_bibleary"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Путеводители" />
+
         <item
             android:id="@+id/nav_tour"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Экскурсии" />
+            android:icon="@drawable/ic_route"
+            android:title="Маршруты" />
         <item
-            android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Профиль" />
+            android:id="@+id/nav_place"
+            android:icon="@drawable/ic_map"
+            android:title="Места и здания" />
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/ic_favorite_heart_button"
+            android:title="Избранное" />
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_home_black_24dp"
             android:title="Домашняя" />
+        <item
+            android:id="@+id/nav_oblako"
+            android:icon="@drawable/ic_photo_camera_black_24dp"
+            android:title="Облачная фотогалерея" />
     </group>
 
 

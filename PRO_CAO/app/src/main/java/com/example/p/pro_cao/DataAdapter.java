@@ -12,13 +12,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.List;
 
@@ -51,25 +44,10 @@ class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
             @RequiresApi(api = Build.VERSION_CODES.KITKAT)
             @Override
             public void onClick(View v) {
-                FirebaseDatabase database = FirebaseDatabase.getInstance();
-                DatabaseReference myRef = database.getReference("gdgf");
-                myRef.addValueEventListener(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        // This method is called once with the initial value and again
-                        // whenever data at this location is updated.
-                        String value = dataSnapshot.getValue(String.class);
-                        Toast.makeText(new1.getActivity(),value,Toast.LENGTH_SHORT).show();
-                    }
 
-                    @Override
-                    public void onCancelled(DatabaseError error) {
-                        // Failed to read value
-                    }
-                });
-                Fragment fragment = new News();
+               /* Fragment fragment = new News();
                 FragmentTransaction fragmentManager = new1.getActivity().getSupportFragmentManager().beginTransaction();
-                fragmentManager.replace(R.id.container, fragment).commit();
+                fragmentManager.replace(R.id.container, fragment).commit();*/
 
             }
         });

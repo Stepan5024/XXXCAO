@@ -36,12 +36,10 @@ public class Home extends Fragment {
     }
     private void setInitialData(){
 
-        news.add(new NewsForRecycler ("Какая-то новость",  R.mipmap.ic_launcher,getActivity()));
-        news.add(new NewsForRecycler ("Elite z3",  R.mipmap.ic_launcher,getActivity()));
-        news.add(new NewsForRecycler ("Galaxy S8", R.mipmap.ic_launcher,getActivity()));
-        news.add(new NewsForRecycler ("LG G 5",  R.mipmap.ic_launcher,getActivity()));
-        news.add(new NewsForRecycler ("Elite z3", R.mipmap.ic_launcher,getActivity()));
-        news.add(new NewsForRecycler ("Elite z3",  R.mipmap.ic_launcher,getActivity()));
-        news.add(new NewsForRecycler ("Elite z3",  R.mipmap.ic_launcher,getActivity()));
+        news.add(new NewsForRecycler("В САО покажут спектакль по стихам Бёрнса", R.drawable.news1,getActivity()));
+        news.add(new NewsForRecycler("На Смольной появится новый жилой комплекс",  R.drawable.festivalpark_foto1,getActivity()));
+        news.add(new NewsForRecycler("Мастер-класс о загадках лета прошёл на Зеленоградской", R.drawable.leto,getActivity()));
+        news.add(new NewsForRecycler("Вблизи Ховрино пройдёт \"Медовый Спас\" для детей",  R.drawable.tesr,getActivity()));
+
     }
 }
