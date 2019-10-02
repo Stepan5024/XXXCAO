@@ -13,18 +13,18 @@
             android:id="@+id/nav_place"
             android:icon="@drawable/ic_map"
             android:title="Места и здания" />
-        <item
+     <!--   <item
             android:id="@+id/nav_favorite"
             android:icon="@drawable/ic_favorite_heart_button"
-            android:title="Избранное" />
+            android:title="Избранное" /> -->
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home_black_24dp"
             android:title="Домашняя" />
-        <item
+       <!-- <item
             android:id="@+id/nav_oblako"
             android:icon="@drawable/ic_photo_camera_black_24dp"
-            android:title="Облачная фотогалерея" />
+            android:title="Облачная фотогалерея" /> -->
     </group>
 
 

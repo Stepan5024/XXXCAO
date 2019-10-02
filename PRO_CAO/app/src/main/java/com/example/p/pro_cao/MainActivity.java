@@ -129,14 +129,14 @@ public class MainActivity extends AppCompatActivity
             fragment = new Tour();
         } else if (id == R.id.nav_place) {
             fragment = new ListPlace();
-        } else if (id == R.id.nav_favorite) {
+        }/* else if (id == R.id.nav_favorite) {
             fragment = new Favorite();
 
-        } else if (id == R.id.nav_home) {
+        }*/ else if (id == R.id.nav_home) {
             fragment = new Home();
-        } else if (id == R.id.nav_oblako) {
+        }/* else if (id == R.id.nav_oblako) {
             fragment = new Oblako();
-        }
+        }*/
         if (fragment != null) {
 
             FragmentManager fragmentManager = getSupportFragmentManager();

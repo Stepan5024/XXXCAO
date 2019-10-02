@@ -23,6 +23,16 @@ public class Tour extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_tour, container, false);
+        ImageView im7 = view.findViewById(R.id.imageView5);
+        im7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new Fitness();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+                //  https://yandex.ru/maps/?um=constructor%3Acf179b2341f8f9e002d2d3dabc32eb9a3870f44346605da7be763e16f763465a&source=constructorLink
+            }
+        });
         ImageView im3 = view.findViewById(R.id.imageView3);
         im3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,8 +73,8 @@ public class Tour extends Fragment {
                 //  https://yandex.ru/maps/?um=constructor%3Acf179b2341f8f9e002d2d3dabc32eb9a3870f44346605da7be763e16f763465a&source=constructorLink
             }
         });
-        ImageView im7 = view.findViewById(R.id.imageView1);
-        im7.setOnClickListener(new View.OnClickListener() {
+        ImageView im8 = view.findViewById(R.id.imageView1);
+        im8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Fragment fragment = new ParkTour();

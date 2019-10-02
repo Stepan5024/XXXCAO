@@ -40,6 +40,7 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:4.2.1'
     implementation 'me.dm7.barcodescanner:zxing:1.9.13'
     implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.bluejamesbond:textjustify-android:2.1.6'
 
 
 }

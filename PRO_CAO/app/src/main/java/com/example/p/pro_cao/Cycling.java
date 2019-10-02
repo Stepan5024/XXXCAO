@@ -36,7 +36,7 @@ public class Cycling extends Fragment {
             @Override
             public void onClick(View view)
             {
-                Uri adress= Uri.parse("https://yandex.ru/map-widget/v1/?um=constructor%3A1b8db2fc970323850bd81cbc1d6ee28424b7ac11da10654c43e1c4e10e9f8a78&amp;source=constructor");
+                Uri adress= Uri.parse("https://yandex.ru/map-widget/v1/?um=constructor%3Ad5fba4a187b6c08ebb9fdfef17affe86bd48637796a857a312f118d5f3f58a83&amp;source=constructor");
                 Intent browser= new Intent(Intent.ACTION_VIEW, adress);
                 startActivity(browser);
             }

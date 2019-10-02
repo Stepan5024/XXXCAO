@@ -36,7 +36,7 @@ public class ParkTour extends Fragment {
             @Override
             public void onClick(View view)
             {
-                Uri adress= Uri.parse("https://yandex.ru/map-widget/v1/?um=constructor%3A1b8db2fc970323850bd81cbc1d6ee28424b7ac11da10654c43e1c4e10e9f8a78&amp;source=constructor");
+                Uri adress= Uri.parse("https://yandex.ru/map-widget/v1/?um=constructor%3A0c4f02d3bb9341510177224f0c8c01b8c4f151216d9858e9a5dc6f78d38bc745&amp;source=constructor");
                 Intent browser= new Intent(Intent.ACTION_VIEW, adress);
                 startActivity(browser);
             }

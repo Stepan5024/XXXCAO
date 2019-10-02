@@ -35,7 +35,7 @@ public class MetroToMetro extends Fragment {
             @Override
             public void onClick(View view)
             {
-                Uri adress= Uri.parse("https://yandex.ru/map-widget/v1/?um=constructor%3A1b8db2fc970323850bd81cbc1d6ee28424b7ac11da10654c43e1c4e10e9f8a78&amp;source=constructor");
+                Uri adress= Uri.parse("https://yandex.ru/map-widget/v1/?um=constructor%3A3a909013d076d72f93b35d5975945b893f9e1842727f7bd26de1595609240ba1&amp;source=constructor");
                 Intent browser= new Intent(Intent.ACTION_VIEW, adress);
                 startActivity(browser);
             }

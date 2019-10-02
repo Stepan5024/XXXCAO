@@ -133,22 +133,63 @@
 
                         <TextView
                             android:id="@+id/textView6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_margin="7dp"
+                            android:breakStrategy="balanced"
+                            android:justificationMode="inter_word"
                             android:text="Легендарный советский недострой, заброшенная больница, которая находилась в северной части Москвы в районе Ховрино, рядом с одноименной платформой.
 
-За свою форму, напоминающую логотип секретной корпорации из игры Resident Evil получила прозвище Амбрелла Некоторые же считают, строение похожим на знак Биохазард (Biohazard)
+За свою форму, напоминающую логотип секретной корпорации из игры Resident Evil получила прозвище Амбрелла. Некоторые же считают, строение похожим на знак Биохазард (Biohazard)
 
 Являлась недостроенной больницей, рассчитанной на 1300 мест (по другим данным на 1500)
 
 По мнению многих людей, ХЗБ была богата историями и городскими легендами - памятник, как необычная постройка начала 80х, в ней была своя, необычная атмосфера, которая, притягивала к себе людей.
 
-Строительство больницы началось в 1980 году и было приостановлено в 1985 году. С этого момента больница оставалась недостроенной и постепенно разрушалась. Её снос начался 23 октября 2018 года и завершился 21 ноября 2018 года.
-Стены «Ховринки» были покрыты многочисленными граффити. Самая известная надпись располагалась над главным входом. Она гласила: «Больница эта – край чудес. Зашел в нее и там исчез».
+Строительство больницы началось в 1980 году и было приостановлено в 1985 году. С этого момента больница оставалась недостроенной и постепенно разрушалась.
 "
                             android:textAlignment="center"
                             android:textSize="20sp" />
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/cd3"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:elevation="10dp"
+                            android:layout_below="@id/textView5"
+                            app:cardCornerRadius="32dp">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:gravity="end">
+
+                                <com.example.p.pro_cao.RoundedCornerImageView
+                                    android:id="@+id/imageView90"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/snos"
+                                    android:scaleType="fitXY" />
+
+
+                            </RelativeLayout>
+
+                        </android.support.v7.widget.CardView>
+                        <TextView
+                            android:id="@+id/textView68"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="7dp"
+                            android:breakStrategy="balanced"
+                            android:text="Её снос начался 23 октября 2018 года и завершился 21 ноября 2018 года. Стены «Ховринки» были покрыты многочисленными граффити. Самая известная надпись располагалась над главным входом. Она гласила: «Больница эта – край чудес. Зашел в нее и там исчез».
+"
+                            android:textAlignment="center"
+                            android:textSize="20sp" />
+
                     </LinearLayout>
                 </ScrollView>
             </android.support.v7.widget.CardView>
